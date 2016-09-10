@@ -77,14 +77,14 @@
 		<jar destfile="${build.dir}/JenkinsDemo.sources.jar">
 			<fileset dir="${src}" includes="**/*.java" />
 		</jar>
-		
+		<!--
 		<taskdef name="cpd" classname="net.sourceforge.pmd.cpd.CPDTask" />
 		<cpd minimumTokenCount="50" outputFile="${build.dir}/cpd.txt">
 			<fileset dir="${basedir}/src">
 				<include name="**/*.java"/>
 			</fileset>
 		</cpd>
-				
+			-->	
 	</target>
 
 	<target name="clean">
