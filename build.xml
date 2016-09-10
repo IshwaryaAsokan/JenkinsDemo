@@ -70,10 +70,11 @@
 		<javac srcdir="${src}" destdir="${bin}" target="1.8" source="1.8">
 			<classpath refid="compileclasspath" />
 		</javac>
-		<copy todir="${bin}">
+		<!--<copy todir="${bin}">
 		    <fileset dir="${basedir}/resources"/>
 		  </copy>
-		<jar destfile="${build.dir}/Jenkins emo.sources.jar">
+		-->
+		<jar destfile="${build.dir}/JenkinsDemo.sources.jar">
 			<fileset dir="${src}" includes="**/*.java" />
 		</jar>
 		
