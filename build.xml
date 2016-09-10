@@ -11,7 +11,7 @@
 	<property name="pmd.report" value="${build.dir}/pmd" />
 
 
-	<target name="create_run_jar" depends="compile, default, runTests, pmd">
+	<target name="create_run_jar" depends="compile, default, runTests">
 		<jar destfile="${target.dir}/JenkinsDemo.jar">
 			<manifest>
 				<attribute name="Main-Class" value="com.demo.JenkinsDemo" />
@@ -93,7 +93,7 @@
 		<delete file="${target.dir}/EQSpecsBuilder.jar" failonerror="no" />
 		<delete dir="${junit.report}" failonerror="no" />
 	</target>
-
+<!--
 	<target name="pmd">
 		<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>		
 		<pmd shortFilenames="true">
@@ -106,7 +106,7 @@
 		
 		
 	</target>
-			
+	-->		
 	<target name="runTests">
 		<mkdir dir="${junit.report}" />
 		<junit printsummary="yes" showoutput="yes"  haltonfailure="no">
